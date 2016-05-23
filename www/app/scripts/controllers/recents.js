@@ -45,11 +45,11 @@ angular.module('easyMoveApp')
   // }, function errorCallback(response) {
     // called asynchronously if an error occurs
     // or server returns response with an error status.
-    $http.get('/scripts/dummy/states.json').success(function (data){
+    $http.get('scripts/dummy/states.json').success(function (data){
          $scope.stateList = data.states
     });
 
-    $http.get('/scripts/dummy/userData.json').success(function (data){
+    $http.get('scripts/dummy/userData.json').success(function (data){
                  $scope.userData = data
             });
   // });
@@ -79,21 +79,21 @@ angular.module('easyMoveApp')
             // called asynchronously if an error occurs
             // or server returns response with an error status.
             // console.log("ERROR > "+JSON.stringify(response));
-            $http.get('/scripts/dummy/estates.json').success(function (data){
+            $http.get('scripts/dummy/estates.json').success(function (data){
                  $scope.estatesList = data.estates
             });
           // });
     }
 
     $scope.destacadosHome = function (){
-      $http.get('/scripts/dummy/estates.json').success(function (data){
+      $http.get('scripts/dummy/estates.json').success(function (data){
                  $scope.estatesList = data.estates
             });
       $scope.goTo('destacados')
     }
 
     $scope.selectionHome = function (){
-      $http.get('/scripts/dummy/estates.json').success(function (data){
+      $http.get('scripts/dummy/estates.json').success(function (data){
                  $scope.estatesList = data.estates
             });
       $scope.goTo('selection')
@@ -108,7 +108,7 @@ angular.module('easyMoveApp')
     $scope.goTo = function(destiny){
       $scope.currentView = destiny
       if(destiny == "user-profile"){
-        $http.get('/scripts/dummy/userData.json').success(function (data){
+        $http.get('scripts/dummy/userData.json').success(function (data){
                  $scope.userData = data
             });
       }
@@ -145,7 +145,6 @@ angular.module('easyMoveApp')
       if(!$scope.loginData.name){
         $scope.goTo('user-profile')
       } else {
-        debugger
         $scope.userData.name = $scope.loginData.name;
         $scope.userData.picture = "../images/login/anon-user.png";
         $scope.goTo('user-profile')
