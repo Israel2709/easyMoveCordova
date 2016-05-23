@@ -1,0 +1,77 @@
+<div class="preferences-view">
+	<div id="preferences-modal" class="preferences-modal">
+
+		<h2><b>Filtrar</b></h2>
+		<h3>Ver resultados por región</h3>
+		<div class="top-frame"></div>
+		<div class="specs-selector">
+			<div class="spec">
+				<p>Todos</p>
+				<div class="unchecked" data-ng-class="{'check-ico':filterBy=='all'}" data-ng-click="filterBy='all'; closeFilter()"></div>
+			</div>
+			<div class="spec">
+				<p>Cancún</p>
+				<div class="unchecked" data-ng-class="{'check-ico':filterBy=='cancun'}" data-ng-click="filterBy='cancun'; closeFilter()"></div>				
+			</div>
+			<div class="spec">
+				<p>Playa del Carmen</p>
+				<div class="unchecked" data-ng-class="{'check-ico':filterBy=='playa'}" data-ng-click="filterBy='playa'; closeFilter()"></div>
+			</div>
+			<div class="spec">
+				<p>Cozumel</p>
+				<div class="unchecked" data-ng-class="{'check-ico':filterBy=='cozumel'}" data-ng-click="filterBy='cozumel'; closeFilter()"></div>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-12">
+		<div class="row">
+			<div class="list-header">
+				<div class="back-ico" data-ng-click="goTo('estatesList')"></div>
+				<h1 class="pull-left detail-title">Preferencias</h1>
+				<p class="blue-text restart-link">Reiniciar</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="preferences-wrapper">
+				<p class="marginB0">Ver resultados</p>
+				<button class="btn btn-default btn-filter" data-ng-click="showModal('#preferences-modal','77px')">Filtrar por región</button>
+				<p class="marginB0">Mostrar resultados para</p>
+				<div class="btn-wrapper result-btn-wrapper">
+					<button class="btn btn-default btn-rent pull-left"  data-ng-class="{active:btnRent}" data-ng-click="btnRent = true;btnBuy = false">Rentar</button>
+					<button class="btn btn-default btn-buy pull-right" data-ng-class="{active:btnBuy}" data-ng-click="btnRent = false;btnBuy = true">Comprar</button>
+				</div>
+				<div class="btn-wrapper type-btn-wrapper">
+					<button class="btn btn-default btn-casa pull-left" data-ng-class="{active:btnHouse}" data-ng-click="btnHouse = true;btnDep = false">Casa</button>
+					<button class="btn btn-default btn-departamento pull-right" data-ng-class="{active:btnDep}" data-ng-click="btnHouse = false;btnDep = true">Departamento</button>
+				</div>
+				<p class="text-center">Rango de precio</p>
+				<img src="/images/country/rango.png" alt="" class="rank-img">
+				<p>Quiero que tenga</p>
+				<div class="specs-selector">
+					<div class="spec">
+						<p>Alberca</p>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.pool}"><input type="checkbox" data-ng-model="preferences.pool" class="no-opacity"></div>
+					</div>
+					<div class="spec">
+						<p>Gimnasio</p>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.gym}"><input type="checkbox" data-ng-model="preferences.gym" class="no-opacity"></div>
+					</div>
+					<div class="spec">
+						<p>Seguridad</p>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.security}"><input type="checkbox" data-ng-model="preferences.security" class="no-opacity"></div>
+					</div>
+					<div class="spec">
+						<p>Vista al mar</p>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.sea}"><input type="checkbox" data-ng-model="preferences.sea" class="no-opacity"></div>
+					</div>
+					<div class="spec">
+						<p>Centro comercial cerca</p>
+						<div class="unchecked" data-ng-class="{'check-ico':preferences.mall}"><input type="checkbox" data-ng-model="preferences.mall" class="no-opacity"></div>
+					</div>
+					<p class="blue-text">Mostrar más opciones</p>
+				</div>
+				<div class="save-button" data-ng-click="goTo('estatesList')">Guardar</div>
+			</div>
+		</div>
+	</div>
+</div>

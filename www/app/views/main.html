@@ -1,0 +1,32 @@
+<div data-ng-switch on="currentView">
+  <div class="animate-switch" data-ng-switch-when="statesList">
+    <div data-ng-include="'views/recents.html'"></div>
+  </div>
+  <div class="animate-switch" data-ng-switch-when="estatesList">
+    <div data-ng-include="'views/state-detail.html'"></div>
+  </div>
+  <div class="animate-switch" data-ng-switch-when="estateDetail">
+    <div data-ng-include="'views/estate-detail.html'"></div>
+  </div>
+  <div class="animate-switch" data-ng-switch-when="preferences">
+    <div data-ng-include="'views/preferences.html'"></div>
+  </div>
+  <div class="animate-switch" data-ng-switch-when="login">
+    <div data-ng-include="'views/login.html'"></div>
+  </div>
+  <div class="animate-switch" data-ng-switch-when="user-profile">
+    <div data-ng-include="'views/user-profile.html'"></div>
+  </div>
+  <div class="animate-switch" data-ng-switch-when="contact-data">
+    <div data-ng-include="'views/contact-data.html'"></div>
+  </div>
+    <div class="animate-switch" data-ng-switch-when="create-account">
+    <div data-ng-include="'views/create-account.html'"></div>
+  </div>
+  <div class="animate-switch" data-ng-switch-when="selection">
+    <div data-ng-include="'views/selection.html'"></div>
+  </div>
+  <div class="animate-switch" data-ng-switch-when="destacados">
+    <div data-ng-include="'views/destacados.html'"></div>
+  </div>
+</div>

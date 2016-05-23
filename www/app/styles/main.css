@@ -1,0 +1,1262 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+.container{
+  padding:0px !important;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/*Detail-view*/
+
+.recents-view h1{
+    width: 135px;
+    text-align: center;
+    display: block;
+    margin: 50px auto 0 auto;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bolder;
+    color:#007cba;
+}
+
+.title-box{
+  width:100%;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-box img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -50px;
+  margin-top: -50px;
+  width:150%;
+  z-index: -1;
+  -webkit-transition:all ease 0.5s;
+  transition:all ease 0.5s;
+}
+
+.search-btn{
+      position: absolute;
+    top: 30px;
+    right: 30px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 16px;
+    color: white;
+    background-color: #40b4e5;
+    border: none;
+}
+
+.navigation-card{
+      margin-top: 1px;
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+}
+
+.navigation-card span{
+  display: block;
+  width: 60%;
+  text-align: center;
+  background: white;
+  color: #007cba;
+  padding: 10px 15px 10px 15px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  z-index: 1000;
+  margin: 45px auto 0 auto;
+}
+
+.navigation-card img{
+  width: 130%;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.bottom-nav{
+  height: 60px;
+  background-color:#f3f3f3;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.nav-ico{
+  float: left;
+  width: 45px; 
+  height:45px;
+  background-color: #3fae2a;
+    mask-size: 145%;
+  -webkit-mask-size: 145%;
+  mask-position:-10px -18px;
+  -webkit-mask-position: -10px -18px;
+  margin-top: 15px;
+}
+
+.home-ico{
+  mask-image: url(/images/icos/Ico_Home.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Home.svg);
+
+}
+
+.badge-ico{
+  mask-image: url(/images/icos/Ico_Destacados.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Destacados.svg);
+}
+
+.favourite-ico{
+  mask-image: url(/images/icos/Ico_Estrella.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Estrella.svg);
+}
+
+.user-ico{
+  mask-image: url(/images/icos/Ico_Perfil.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Perfil.svg);
+}
+
+.estate-card{
+  width: 100%;
+  margin-top:1px;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+}
+
+.estate-card img{
+  width: 120%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1
+}
+
+.back-ico{
+  left: 25px;
+  top: 25px;
+  position:absolute;
+  width: 25px;
+  height: 25px;
+  background-color:#007cba;
+  mask-image: url(/images/icos/Ico_Regresar.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Regresar.svg);
+   mask-size: 220%;
+  -webkit-mask-size: 220%;
+  -webkit-mask-position: -14px -14px;
+  mask-position: -14px -14px;
+}
+
+.pref-ico{
+  position: absolute;
+  top:30px;
+  right: 25px;
+  width: 25px;
+  height: 20px;
+  background-color:#007cba;
+  mask-image: url(/images/icos/Ico_Preferencias.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Preferencias.svg);
+   mask-size: 200%;
+  -webkit-mask-size: 200%;
+  -webkit-mask-position: -14px -14px;
+  mask-position: -14px -14px;
+}
+
+.like-ico{
+  width: 55px;
+  height: 55px;
+  margin-left: -14px;
+  background-color: #b3b2b1;
+  mask-image: url(/images/icos/Ico_Megusta.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Megusta.svg);
+  mask-size: 140%;
+  -webkit-mask-size: 116%;
+  margin-top: -14px;
+  -webkit-transition:all ease 0.5s;
+  transition:all ease 0.5s;
+}
+
+.like-ico.active{
+  background-color: #edb725;
+}
+
+.estate-specs{
+  height: 55px;
+  width: 100%;
+  position:absolute;
+  bottom:0;
+  left: 0;
+  background:rgba(254,254,254,.8);
+  z-index: 1;
+}
+
+.estate-specs .home-ico{
+  background-color: #007cba;
+  height: 50px;
+  width: 45px;
+  margin-left: 0px;
+  margin-top:-5px;
+  mask-image: url(/images/icos/Ico_Casa.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Casa.svg);
+   mask-size: 145%;
+  -webkit-mask-size: 145%;
+}
+
+.estate-specs h2{
+  font-size: 12px;
+  color: #007cba;
+  margin-left: 15px;
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
+.estate-specs h3{
+ color: #333;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px
+}
+
+.detail-title{
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.like-ico-wrapper{
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: -19px;
+  right: 0px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 19px;
+  right: 20px;
+}
+
+.list-header{
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+
+.detail-card{
+  width: 100%;
+  overflow: hidden;
+  float: left 
+}
+
+
+.detail-card .home-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Casa.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Casa.svg);
+  float: left;
+  margin-top: 5px;
+
+}
+
+.detail-card .dimensions-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Medidas.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Medidas.svg);
+  float: left;
+  margin-top: 5px;
+
+}
+
+.detail-card .age-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(../images/icos/Ico_Tiempo.svg);
+  -webkit-mask-image: url(../images/icos/Ico_Tiempo.svg);
+  float: left;
+  margin-top: 5px;
+
+}
+
+.particular-details .rooms-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Recamara.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Recamara.svg);
+  float: left;
+}
+
+.particular-details .bathroom-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Banio.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Banio.svg);
+  float: left;
+}
+
+.particular-details .parking-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Cochera.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Cochera.svg);
+  float: left;
+}
+
+.particular-details .check-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_SinSeleccion.svg);
+  -webkit-mask-image: url(/images/icos/Ico_SinSeleccion.svg);
+  float: left;
+}
+
+.particular-details .address-ico{
+  background-color: #55565a;
+  width: 30px;
+  height: 30px;
+  background-color: #55565a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Geolocalizacion.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Geolocalizacion.svg);
+  float: left;
+}
+
+.detail-card .like-ico-wrapper{
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: -19px;
+  right: 0px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 19px;
+  right: 20px;
+}
+
+.detail-card .estate-specs{
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: auto
+}
+
+.detail-card .estate-specs h2{
+  font-size: 12px;
+  color: #007cba;
+  margin-left: 15px;
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 2px;
+}
+
+.detail-card .estate-specs h3{
+  color: #333;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 15px
+}
+
+.detail-card .general-details{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.spec-row{
+  float: left;
+  width: 100%;
+  display: block;
+  margin:20px 0 0 20px;
+}
+
+.spec-row p{
+    float: left;
+    margin:0px 0px 2px 20px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    margin-top: 3px;
+    width: 80%;
+}
+
+.spec-row .age-row {
+  margin-top: 10px;
+}
+
+.spec-row span{
+  width: 50px;
+  font-weight: bold;
+  float: left;
+}
+
+.general-details{
+  padding-bottom: 20px
+}
+
+.particular-details{
+  float: left;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  background-color:#e5e5e5;
+  color: #555;
+  padding:20px;
+}
+
+
+.particular-details .spec-row{
+  margin:0px 0px 10px 0px;
+}
+
+.particular-details .spec-row.last{
+  border-bottom:1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.extras{
+  float: left;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.extra-item{
+  float: left;width:50%;
+}
+
+.extra-item p{
+  float: left;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+.address{
+  margin-top:15px;
+  float: left;
+  width:100%;
+}
+
+.address p{
+ float: left;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px
+  }
+
+.estate-specs img{
+  width: 100%;
+  float: left;
+  border-top: 1px solid #ccc
+}
+
+.contact-data{
+  float: left;width: 100%;padding:20px;
+}
+
+.contact-data .info-text{
+  padding-bottom: 20px;
+  border-bottom:1px solid #ccc;
+  width: 100%
+}
+
+.gray-text{
+  color:#B2B3B1 !important;
+}
+
+.blue-text{
+  color:#40b4e5 !important;
+}
+
+.info-card h3{
+  font-size: 14px;
+  color:#B2B3B1;float: left;
+}
+
+.info-card h4{
+  font-size: 14px;
+  border-bottom:1px solid #CCC;float: left;
+}
+
+.info-row{
+  width: 100%;
+  float: left
+}
+
+.info-card .gerency-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Gerente.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Gerente.svg);
+  float: left;
+}
+
+.info-card .address-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Geolocalizacion.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Geolocalizacion.svg);
+  float: left;
+}
+
+.info-card .phone-ico{
+  background-color: #3fae2a;
+  width: 30px;
+  height: 30px;
+  background-color: #3fae2a;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_Telefono.svg);
+  -webkit-mask-image: url(/images/icos/Ico_Telefono.svg);
+  float: left;
+}
+
+.info-row{
+  margin-top:20px;
+}
+
+.info-row h3{
+  margin-top:0px;
+  width: 80%;
+  margin-left: 20px;
+  margin-bottom:0px;
+}
+
+.info-row h4{
+  margin-top:0px;
+  width: 80%;
+  padding-bottom:20px;
+  margin-left: 20px;
+  margin-top: 0px;
+  color:#282828;
+}
+
+.no-border{
+  border: none
+}
+
+.slider-wrapper{
+  float: left;
+  width: 100%;
+  background:#282828;
+  padding:20px;
+  overflow: hidden;
+}
+
+.slider-wrapper h2{
+  float: left;
+  color: #b2b3b1;
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+.slides-wrapper{
+  float: left;
+  height: 100px;
+  width: 710px;
+}
+
+.slides-wrapper img{
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+}
+
+.slider-row{
+  height: 100px;
+  width: 100%;
+  overflow-x:scroll;
+}
+
+.rent-button{
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding:15px 0;
+  color: white;
+  font-weight: bold;
+  height:60px;
+  background-color: #3fae2a;
+  font-size: 20px;
+  margin-top: 20px
+}
+
+.restart-link{
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  font-weight: bold;
+}
+
+.preferences-wrapper{
+  float: left;
+  border-top: 1px solid #ccc;
+  background:#f3f3f3;
+  padding:20px;
+  width: 100%
+}
+
+.btn-filter{
+  width: 100%;
+  height: 50px;
+  color: #40b4e5;
+  margin-bottom: 20px;
+}
+
+.result-btn-wrapper, .type-btn-wrapper{
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  height: 50px;
+  margin-top: 10px
+}
+
+
+.result-btn-wrapper .btn, .type-btn-wrapper .btn {
+  width: 50%;
+  border-radius: 0px;
+  border: none;
+  height: 50px;
+    -webkit-transition:all ease 0.5s;
+  transition:all ease 0.2s;
+}
+
+.type-btn-wrapper{
+  margin-bottom: 20px;
+}
+
+/*.btn-wrapper .btn:active, .btn-wrapper .btn:hover{
+  box-shadow: none;
+  background: none;
+  background:#40b4e5;
+  color: white;
+}*/
+
+.rank-img{
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btn-wrapper .btn.active{
+  background:none;
+  background:#40b4e5;
+  box-shadow: none;
+  color: white;
+}
+
+.specs-selector{
+  width: 100%;
+  padding:10px;
+  padding-top:0px;
+  float: left;
+  background: white;
+  border: 1px solid #b2b3b1
+}
+
+.specs-selector .check-ico{
+  background-color: #40b4e5;
+  width: 30px;
+  height: 30px;
+  background-color: #40b4e5;
+  mask-size: 220%;
+  -webkit-mask-size: 220%;
+  mask-position: -18px -17px;
+  -webkit-mask-position: -18px -17px;
+  mask-image: url(/images/icos/Ico_ConSeleccion.svg);
+  -webkit-mask-image: url(/images/icos/Ico_ConSeleccion.svg);
+  float: left;
+}
+
+.spec p{
+  float: left;
+  margin-top:3px;
+  margin-bottom: 0px;
+}
+
+.spec .unchecked{
+  width: 29px;
+  height: 29px;
+  border: 1px solid #40b4e5;
+  border-radius: 20px;
+  float: right;
+  margin-top: 2px;
+  -webkit-transition:background-color ease 0.5s;
+  transition:background-color ease 0.5s;
+  overflow: hidden;
+}
+
+.spec{
+  border-bottom: 1px solid #ccc;
+  float: left;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.spec:last-of-type{
+  border-bottom:none;
+}
+.specs-selector .blue-text{
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.save-button{
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding:15px 0;
+  color: white;
+  font-weight: bold;
+  height:60px;
+  background-color: #40b4e5;
+  font-size: 20px;
+  margin-top: 20px
+}
+
+.marginB0{
+  margin-bottom: 0px;
+}
+
+.preferences-modal{
+  width: 100%;
+  height: 749px;
+  background: rgba(55,55,55,.8);
+  float: left;
+  padding: 20px;
+  z-index: 9000;
+  position: absolute;
+  margin-top: -500px;
+  margin-top:-749px;
+  -webkit-transition:all ease 1s;
+  transition:all ease 1s;
+}
+
+.preferences-modal h2, .preferences-modal h3{
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom:10px;
+  margin-top: 0px
+}
+
+.top-frame{
+  width: 100%;
+  height: 15px;
+  float: left;
+  background: #282828;
+  border-radius: 5px 5px 0 0 ;
+}
+
+.no-opacity{
+  opacity: 0
+}
+
+.profile-header{
+  height: 65px;
+  width: 100%;
+  position: relative;
+}
+
+.user-pic{
+  width: 110px;
+    height: 110px;
+    border: 2px solid white;
+    border-radius: 60px;
+    overflow: hidden;
+    display: block;
+    margin: 0px auto 0 auto;
+    box-shadow: 2px 2px 12px #55565a
+}
+
+.user-pic img{
+  width: 100%
+}
+
+.user-data h3{
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color:#282828;
+  margin-top:5px;
+}
+
+.btn-contact-data, .btn-payment-data{
+  width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 15px;
+    position: relative;
+    height: 50px;
+    padding-bottom: 15px
+}
+
+.btn-payment-data{
+  border:none;
+}
+
+.btn-contact-data .user-ico{
+  position: absolute;
+    top: 10px;
+    left: 15px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Perfil.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Perfil.svg)
+}
+
+.btn-payment-data .card-ico{
+  position: absolute;
+    top: 10px;
+    left: 15px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Tarjeta.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Tarjeta.svg)
+}
+
+.user-profile-view, .contact-data-view, .login-view, .create-account-view{
+  background: url(/images/login/login-bckgnd.jpg) 100% 100%;
+}
+
+.share{
+  float: left;
+    width: 100%;
+    margin-top: 82px;
+    margin-bottom: 30px;
+}
+
+.share-links{
+  text-align: center;
+  color: #007cba;
+  font-weight: bold;
+}
+
+.close-session{
+      width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background: none;
+    background: #40b4e5;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.terms{
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  margin-top:20px;
+  margin-bottom: 20px
+}
+
+.profile-header h1{
+      margin-top: 50px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.data-row{
+  width: 90%;
+  display: block;
+  margin: 10px auto 0 auto;
+  position: relative;
+  border-bottom: 1px solid white;
+  height: 45px;
+  padding-left: 40px;
+  color: #282828;
+}
+
+.contact-data .user-ico{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Perfil.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Perfil.svg)
+}
+.contact-data .mail-ico{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Correo.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Correo.svg)
+}
+.contact-data .cel-ico{
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Celular.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Celular.svg)
+}
+
+.contact-data .data-label{
+      font-size: 10px;
+    margin-bottom: 0px;
+}
+
+.info-text{
+  font-size: 11px;
+    color: white;
+    float: left;
+    width: 100%;
+}
+
+.contact-data-view .terms{
+  margin-top: 176px;
+}
+
+.login-form .user-ico{
+  z-index: 9999;
+  position: absolute;
+    top: 13px;
+    left: 35px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #B2B3B1;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Perfil.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Perfil.svg)
+}
+
+.login-form .lock-ico{
+  z-index: 9999;
+  position: absolute;
+    top: 13px;
+    left: 35px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #B2B3B1;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Candado.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Candado.svg)
+}
+.login-form {
+      width: 90%;
+    margin: 10px auto 0 auto;
+}
+
+.login-form .input-group{
+  width: 100%
+}
+
+.login-form input{
+  height: 55px;
+  padding-left: 80px;
+}
+
+.save-form{
+      width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    background: none;
+    background: #3fae2a;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.create-account{
+      width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    background: none;
+    border: none;
+    color: #007cba;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.main-logo img{
+      width: 45%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.create-account-view .lock-ico{
+  z-index: 9999;
+  position: absolute;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    mask-size: 145%;
+    -webkit-mask-size: 200%;
+    mask-position: -10px -18px;
+    -webkit-mask-position: -16px -14px;
+    mask-image: url(/images/icos/Ico_Candado.svg);
+    -webkit-mask-image: url(/images/icos/Ico_Candado.svg)
+}
+
+.create-account-view .data-info{
+  font-weight: bold;
+  padding-top: 7px
+}
+
+.white-text{
+  color:white;
+}
+
+.social-nw-btn.facebook{
+    width: 38%;
+    border: 1px solid #3b5998;
+    display: block;
+    float: left;
+    height: 50px;
+    background: none;
+    border-radius: 50px;
+    color: #3b5998;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.social-nw-btn.twitter{
+    width: 38%;
+    border: 1px solid #007cba;
+    display: block;
+    float: left;
+    height: 50px;
+    background: none;
+    border-radius: 50px;
+    color: #007cba;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
