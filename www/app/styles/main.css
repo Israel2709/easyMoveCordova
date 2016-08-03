@@ -1287,3 +1287,59 @@ body {
     font-weight: bold;
     margin-left: 10px;
 }
+
+
+/*Web version*/
+
+.main-header{
+  height: 100px;
+  width: 100%;
+  background: #46b135;
+  color: white;
+}
+
+.main-header .navbar{
+  width: 75%;
+  float: right;
+  background: none;
+  border: none;
+  color: white !important;
+  margin-top: 22px;
+}
+
+.main-header .btn-default{
+  background: none;
+  border: 2px solid white;
+  width: 211px;
+  height: 36px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 8px;
+}
+
+.main-header .btn-default:hover{
+  background: none;
+  background: white;
+  border: 2px solid white;
+  color: #46b135;
+}
+
+.header-logo{
+  background-image:url(../images/web/header-logo.png);
+  width:18%;
+  height: 100px;
+  float: left;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center left;
+  margin-left: 10px;
+}
+
+.navbar-nav li a{
+  color: white !important;
+  font-size: 14px !important
+}
+
+.navbar-nav li.active a{
+  background: none !important;
+}

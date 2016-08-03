@@ -18,9 +18,41 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+        <icon src="res/android/ldpi/icon.png" density="ldpi" />
+        <icon src="res/android/mdpi/icon.png" density="mdpi" />
+        <icon src="res/android/hdpi/icon.png" density="hdpi" />
+        <icon src="res/android/xhdpi/icon.png" density="xhdpi" />
+        <splash src="res/android/splash/splash-hdpi.png" density="land-hdpi"></splash>  
+        <splash src="res/android/splash/splash-ldpi.png" density="land-ldpi"></splash> 
+        <splash src="res/android/splash/splash-mdpi.png" density="land-mdpi"></splash>  
+        <splash src="res/android/splash/splash-xhdpi.png" density="land-xhpi"></splash>
+
+        <splash src="res/android/splash/splash-portrait-hdpi.png" density="port-hdpi"></splash>  
+        <splash src="res/android/splash/splash-portrait-ldpi.png" density="port-ldpi"></splash> 
+        <splash src="res/android/splash/splash-portrait-mdpi.png" density="port-mdpi"></splash>  
+        <splash src="res/android/splash/splash-portrait-xhdpi.png" density="port-xhpi"></splash>         
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <preference name="DisallowOverscroll" value="true"/>
+        <preference name="UIWebViewBounce" value="false" />        
+        <icon src="res/ios/icon/icon-60.png" width="60" height="60" />
+        <icon src="res/ios/icon/icon-60@2x.png" width="120" height="120" />
+        <icon src="res/ios/icon/icon-76.png" width="76" height="76" />
+        <icon src="res/ios/icon/icon-76@2x.png" width="152" height="152" />
+        <icon src="res/ios/icon/icon-40.png" width="40" height="40" />
+
+        <splash src="res/ios/splash/Default@2x~iphone2.png" width="640" height="960"></splash>
+        <splash src="res/ios/splash/Default@2x~iphone.png" width="640" height="1136"></splash>
+        <splash src="res/ios/splash/Default~iphone.png" width="320" height="480"></splash>
+        <splash src="res/ios/splash/Default-667h.png" width="750" height="1334"></splash>
+        <splash src="res/ios/splash/Default-736h.png" width="1242" height="2208"></splash>
+        <splash src="res/ios/splash/Default-Landscape@2x~ipad.png" width="2048" height="1536"></splash>
+        <splash src="res/ios/splash/Default-Landscape~ipad.png" width="1024" height="768"></splash>
+        <splash src="res/ios/splash/Default-Landscape-736h.png" width="2208" height="1242"></splash>
+        <splash src="res/ios/splash/Default-Portrait@2x~ipad.png" width="1536" height="2018"></splash>
+        <splash src="res/ios/splash/Default-Portrait~ipad.png" width="768" height="1024"></splash>
+
     </platform>
 </widget>
